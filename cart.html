@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin:20px auto;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .container > div {
+            padding: 10px;
+            border:2px solid black;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .cartInfo, .discount {
+            margin:20px auto;
+            width: 70%;
+            
+        }
+
+        .cartInfo {
+            display: flex;
+        }
+
+        .cartInfo > .header{
+            flex: 1 0 80%;
+        }
+
+        .cartInfo > .info{
+            justify-self: flex-start;
+        }
+
+        .cartInfo > div{
+            flex-basis: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartInfo">
+        <div class="header">
+            <h2>Cart</h2>
+        </div>
+        <div class="info">
+            <p>Total Items: <span class='total-items'></span></p>
+            <p>Total Price: $<span class='total-price'></span></p>
+        </div>
+    </div>
+
+    <div class="discount">
+        <p>Got a discount coupon?</p>
+        <input type="text" name='discount' placeholder='Enter discount coupon'/>
+        <button class='discountBtn'>Apply Discount</button>
+    </div>
+    
+    <div class="container">
+        
+    </div>
+    <script src="productScripts.js"></script>
+</body>
+</html>

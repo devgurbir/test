@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.form h2, label, input, button{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Create New Product</h2>
+        <label for="name">Name</label>
+            <input type="text" name='productName' placeholder="Enter product name">
+        
+        <label for="price">Price</label>
+            <input type="text" name='productPrice' placeholder="Enter product price">
+        
+        <label for="image">Image</label>
+            <input type="text" name='productImage' placeholder="Enter product image URL">
+        
+        <button class='createBtn'>Create Product</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
